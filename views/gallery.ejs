@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .page {
+            background: url("images/pexels-andie-venzl-2418958.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            color: rgb(158, 250, 193);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        
+        .title {
+            align-content: center;
+            color: khaki;
+            text-shadow: 2px 2px 5px rgb(73, 8, 8);
+            text-decoration: aqua;
+            text-align: center;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="page">
+    <div class="title">
+        <h2>SOME GLIMPSES OF HEAVEN !!</h2>
+        <h4>
+            <%= tour%>
+        </h4>
+
+        <div style="padding:6px;">
+            <a href="/home" class="btn btn-outline-info">Back to home</a>
+
+        </div>
+
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/AN 1.jpg">
+                <img src="/images/AN 2.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Andaman Nicobar</h4>
+                <p>Continent : Asia<br> Union Territory India<br> Best Time: October - June <br> "Blue seas, virgin islands and colonial past" Replete with picturesque shimmering beaches, lagoons of turquoise blue waters and a bit of history, Andaman & Nicobar
+                    Islands is a little slice of paradise tucked around 1,400 km away from the east coast of India. The union territory comprises a total of 572 islands, only 37 of which are inhabited and a few are open to the tourists.
+
+                    <a href="/an" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/N 1.jpg">
+                <img src="/images/N 2.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Nainital</h4>
+                <p>Continent : Asia<br> Uttarakhand India<br> Best Time: Throughout the year<br> "City of Lakes"<br> The gem of Uttarakhand - Nainital is a charming hill station that sits prettily at the green foothills of the Kumaon ranges in the Himalayas.
+                    Located at an elevation of around 1938 metres, Nainital is located and developed around the beautiful Naini Lake, after which the town is named. The most visited hill station in North India, Nainital is a perfect weekend getaway from
+                    the Indian capital of Delhi and the nearby places.
+                    <a href="/nainital" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/goa 1.jpg">
+                <img src="/images/goa 2.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Goa</h4>
+                <p>Continent : Asia<br> Best Time: October to March<br> Lying on the western coast, Goa is India's smallest state and unlike any other, known for its endless beaches, stellar nightlife, eclectic seafood, world-heritage listed architecture.
+                    Spread across just 3,702 km, Goa lies in the Konkan region. It is a far cry from the hippie haven or a beach getaway, and one of the only few destinations that is open 24x7.
+                    <a href="/goa" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/MANALI 1.jpg">
+                <img src="/images/manali 2.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Manali</h4>
+                <p>Continent : Asia.<br> Best Time: October - June <br> "Lover's Paradise - India's Honeymoon capital"<br> Nestled in between the snow-capped slopes of the Pir Panjal and the Dhauladhar ranges, Manali is one of the most popular hill stations
+                    in the country. With jaw-dropping views, lush green forests, sprawling meadows carpeted with flowers, gushing blue streams, a perpetual fairy-tale like mist lingering in the air, and a persistent fragrance of pines - Manali has been
+                    blessed with extraordinary scenic beauty. From museums to temples, from quaint little hippie villages to bustling upscale streets, river adventures to trekking trails, Manali has every reason to be the tourist magnet it is, all year
+                    round.
+                    <a href="/manali" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/N 1.jpg">
+                <img src="/images/Delhi.jpeg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Delhi</h4>
+                <p>Continent : Asia<br> Delhi India<br> Best Time: Winter<br> Delhi is officially the National Capital Territory. NewDelhi is the capital of India.Qutub Minar is the symbol of Delhi. It is a 1000-year-old structure.Prime Minister of India
+                    gives its speech on 15 August from Red Fort which is in Delhi.The Parliament of India is situated in New Delhi.Delhi has an important structure like Humayun’s tomb, Old fort, Siri fort, Jama Masjid, Lotus temple monuments.Delhi is
+                    a metro city and an important business hub.Many Sufi dargahs (shines) in Delhi most famous one is Hazrat Nizammudin Auliya dargah. All important ministry and government offices are in New Delhi are of Delhi. The population of Delhi
+                    is almost 2 crore.
+
+                    <a href="/delhi" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/taj 2.jpg">
+                <img src="/images/taj 1.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Agra</h4>
+                <p>Continent : Asia<br> Best Time: Oct-Manrch<br> "The city of Taj Maha, the monument of eternal love"<br> Located on the banks of River Yamuna in Uttar Pradesh, Agra is a popular tourist destination as it is home to one of the 7 wonders
+                    of the world, the Taj Mahal. It is a sneak peek into the architectural history and legacy of the Mughal empire with two other UNESCO World Heritage Sites Agra Fort and Fatehpur Sikri. History, architecture, romance all together create
+                    the magic of Agra, and hence, makes for a must-visit for anyone living in or visiting India.
+                    <a href="/agra" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/N 1.jpg">
+                <img src="/images/Kerala Best Package (1).jpeg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Kerala</h4>
+                <p>Continent : Asia<br> Kerala India<br> Best Time: Winter<br> "Scenic Beauty"<br> Kerala is a state in South India on the Malabar Coast. It was formed on 1 November 1956 following the States Reorganisation Act by combining Malayalam-speaking
+                    regions. Spread over 38,863 km2(15,005 sq mi), it is bordered by Karnataka to the north and northeast, Tamil Nadu to the east and south, and the Lakshadweep Sea to the west. With 33,387,677 inhabitants as per the 2011 Census, Kerala
+                    is the thirteenth-largest Indian state by population. It is divided into 14 districts with the capital being Thiruvananthapuram, which is the largest city in the state. Malayalam is the most widely spoken language and is also the official
+                    language of the state.
+                    <a href="/kerala" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg">
+                <img src="/images/LADAKH_ THE DESTINATION YOU CAN'T MISS IN INDIA.jpeg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Ladakh</h4>
+                <p>Continent : Asia<br> Jammu and Kashmir India<br> Best Time: Summer<br> "City of Landscapes<br>• Ladakh is a union territory of the Indian country.It is a very cold place filled with mountains.Ladakh has a population of 274,289 people.
+                    This region has been the reason of conflict between India, Pakistan and China. Pakistan and China want to have control of this region.Ladakh has two capitals these are Leh and Kargil.In Leh the airport runway is hard to land for pilots
+                    because it is surrounded by mountains in all the sides. Some pilots take leave to avoid taking a flight to Leh and the runway is also a bit short. It is a short runway big flights do not land here.Ladakh is the highest settlement in
+                    India. The camels in the Ladakh region are adapted to the cold weather of the region.It is the highest plateau that is there in Kashmir.Attached below is the picture of a group of Camels in the Ladakh region walking together.
+                    <a href="/ladakh" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/N 1.jpg">
+                <img src="/images/Udaipur, Rajasthan, India.jpeg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Udaipur</h4>
+                <p>Continent : Asia<br> Udaipur India<br> Best Time: Winter<br> "City of Lakes<br> Udaipur was established in 1559 by Maharana Udai Singh as the new capital of Mewar as Chittorgarh, the previous capital, was deemed too vulnerable due to repeated
+                    attacks by the Mughals. The next 400 years saw Udaipur fighting for independence from the Mughals, repelling their attacks, signing peace treaties with them, facing attacks from the Marathas, alternately supporting the British or rebelling
+                    against them; and finally agreeing to join other Rajput kingdoms in forming the state of Rajasthan after Independence.
+                    <a href="https://Udaipurtourism.gov.in/destination/kerala/" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/images/N 1.jpg">
+                <img src="/images/Khandala, Maharashtra.jpeg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">
+                <h4>Khandala</h4>
+                <p>Continent : Asia<br> Maharashtra India<br> Best Time: Winter and Rainy Season<br> "City of hiking<br>Khandala is dreamy, scenic and mesmerising are the perfect words to describe the beautiful hill stations of Maharashtra, Lonavala and
+                    Khandala. People prefer to drive to these hill stations as the way leading here is absolutely charming. These hill towns witness a huge footfall during summers as traveller and holidaymakers from near and far visit here in huge numbers
+                    each year. And why not, the pleasant climate and natural beauty surrounding the area is just unmissable. The place is renowned for its cascading waterfalls, picturesque lakes, old caves and religious spots. Less than 65 km from Pune
+                    and around 100 km from Mumbai, Lonavala and Khandala are the much preferred weekend getaways and are well-connected by road via the famous Mumbai-Pune Expressway. Trains are also available at regular intervals from Pune and Mubai,
+                    which makes it all the more easier for visitors. These twin hill stations, in Sahyadri ranges, are 622 metres (2,041 ft) above sea level and make for perfect summer holiday destination in the country.
+                    <a href="https://Khandalatourism.gov.in/destination/kerala/" class="btn btn-outline-info">visit for more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="clearfix"></div>
+    <div class="button">
+        <div style="padding:6px;">
+            <p><a href="/home">To know more go to home page</a></p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

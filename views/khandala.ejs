@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khandala</title>
+</head>
+<style>
+    html {
+        background: url("images/khandala bg.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    #placeName {
+        font-size: 3em;
+        color: rgb(160, 230, 150);
+        font-family: Papyrus, fantasy;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgb(75, 19, 19);
+    }
+    
+    #intro {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(213, 235, 163);
+        font-size: 1.5em;
+        text-shadow: rgb(34, 65, 66);
+        text-shadow: 2px 2px 5px rgb(75, 19, 19);
+    }
+    
+    #attraction {
+        padding-left: 5%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color: rgb(36, 231, 231);
+        text-shadow: 2px 2px 5px rgb(75, 19, 19);
+    }
+    
+    h4 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.5em;
+        color: rgb(245, 112, 68);
+        text-shadow: 2px 2px 5px rgb(99, 32, 32);
+    }
+    
+    img {
+        width: 500px;
+        height: 400px;
+        padding-left: 32%;
+    }
+    
+    #attrinfo {
+        font-size: 1.5em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(133, 235, 230);
+        text-shadow: 2px 2px 5px rgb(73, 8, 8);
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    
+    #button {
+        background-color: #5978ff;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 43%;
+    }
+</style>
+
+<body>
+    <h1 id="placeName">
+        <%= khandala%>
+            <p>"Misty Mountains"</p>
+    </h1>
+    <div>
+        <p id="intro">
+
+
+            Khandala is a popular hill station in Maharashtra, perched on the foothills of Sahyadri in the Western Ghats. Khandala provides for a perfect weekend respite for the Mumbai population, with its scenic valleys, grassy hills, serene lakes and misty waterfalls.
+        </p>
+    </div>
+    <div>
+        <h1 id="attraction">Places of attraction</h1>
+    </div>
+    <div>
+        <h4>VISAPUR FORT</h4>
+        <img src="/images/visapur.jpg">
+        <p id="attrinfo">
+            Perched upon a lush green plateau, the Visapur Fort is a popular weekend getaway for people living in Pune and Mumbai. It offers panoramic view hills covered in a thick blanket of green. It is also a popular destination for trekking.
+        </p>
+    </div>
+    <div>
+        <h4>KUNE FALLS</h4>
+        <img src="/images/Kune Fall Khandala.jpeg">
+        <p id="attrinfo">
+            Kune Falls are the 14th highest waterfalls in India located in Lonavala. It is a three-tiered waterfall set amidst the backdrop of Sahayadri mountains. Divided into two sections, visiting Kune Falls makes up for an enchanting visual experience. A popular
+            picnic spot, the area is surrounded by lush greenery. One can also enjoy swimming and bathing in the water. Unfortunately, the road to the Kune Falls is under private and hence visitor entry is restricted.
+        </p>
+    </div>
+    <div>
+        <h4>BHUSHI DAM</h4>
+        <img src="/images/Bhushi dam Khandala.jpeg">
+        <p id="attrinfo">
+            Bhushi Dam is a masonry dam on the Indrayani River in Lonavala, Maharashtra. It is a popular tourist attraction which is best visited during the monsoons when the water in the dam overflows. The overflowing water over the steps of Bhushi Dam and then
+            through the rocky terrain make this place a hit among the people of nearby areas who throng in large numbers on weekends during monsoons. It tends to get so crowded that many individuals find it hard even to get a decent standing spot.
+        </p>
+    </div>
+    <div>
+        <h4>DUKE'S NOSE VIEWPOINT</h4>
+        <img src="/images/duke.jpg">
+        <p id="attrinfo">
+            Duke’s Nose viewpoint is hugely famous for hiking and its picturesque location. Tourists often visit the landmark to get a panoramic view of the beautiful Sahyadri Ranges, the splendid valleys and the dense forests that cover the Sahyadris.
+        </p>
+    </div>
+    <div>
+        <h4>BHEDSA CAVES</h4>
+        <img src="/images/bhedsa.jpg">
+        <p id="attrinfo">
+            Bhedsa caves are one of the oldest caves of Maharashtra, dating back to 60 BC. These are situated on a sloppy hilly location. Known for their beautiful, exquisite carvings, the caves contain four 25 feet high pillars.
+        </p>
+    </div>
+    <div><a href="/search" class="btn btn-info" id="button">Back to Search Page</a></div>
+</body>
+
+</html>

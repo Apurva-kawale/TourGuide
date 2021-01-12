@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <%= title%>
+    </title>
+    <style>
+        html {
+            background: url("images/Neil Island AN.jpeg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+        
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\2212";
+        }
+        
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        
+        h2 {
+            color: seagreen;
+            text-align: center;
+            font-size: 3em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        #head {
+            color: seashell;
+            font-size: 2em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        #question {
+            font-size: 1em;
+        }
+        
+        #answer {
+            font-size: 1.1em;
+        }
+        
+        #button {
+            background-color: #5978ff;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 43%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Frequently Asked Questions</h2>
+    <p id="head">Some questions that frequently come in mind while planning a tour are answered in this section!</p>
+    <button class="accordion" id="question">Does the cost of travel increases with if we plan to go with more number of people?</button>
+    <div class="panel">
+        <p id="answer">No doubt the travel cost will increase if you travel with more number of people. But some of the tour packages offer some discount with added number of people travelling. So check most of the sites thoroughly to avail best discounts.</p>
+    </div>
+
+    <button class="accordion" id="question">What age group of people we should travel with?</button>
+    <div class="panel">
+        <p id="answer">There is no such constraint on travelling to a particular place with people of particular age group, but you will need to understand their age group needs. If you are travelling with children, you have to allow playtime and restime in your schedule.
+            Or if you are travelling with older people, they may not take part in adventure activities.</p>
+    </div>
+
+    <button class="accordion" id="question">When is the perfect time to travel to a place?</button>
+    <div class="panel">
+        <p id="answer">Every tourist place has its own best time to travel, some places are best to see in rainy season, when their valleys are cherished with greenary, and some places are are best to visit during winter to play in the snow covered. While some places
+            are good to visit in summers to take a break from the scorching heat. We have provided the details of the best time to visit some places in <a href="/gallery">gallery</a> section.</p>
+    </div>
+    <button class="accordion" id="question">How to decide the destination of travel?</button>
+    <div class="panel">
+        <p id="answer">According to your wishlist of activities (whether you want a adventurous trip or a realxing holiday) and your budget, you can go through the places fitting in those criteria and look for their respective packages.</p>
+    </div>
+    <button class="accordion" id="question">What is the ideal length of a tour?</button>
+    <div class="panel">
+        <p id="answer">There is no such ideal length of travel. It all depends on your daily schedule and your pocket, more days of tour add more money to be invested in the trip.</p>
+    </div>
+    <button class="accordion" id="question">What commodiities we should carry while travelling?</button>
+    <div class="panel">
+        <p id="answer">Carry all teh important stuff you require in your daily life to stay clean and fresh, as it is important to stay fresh to enjoy every bit of your tour. Also try to have minimun luggage so you can travel with ease, without letting your luggauge
+            become a burden on you.</p>
+    </div>
+    <div><a href="/home" class="btn btn-info" id="button">Back to Home Page</a></div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

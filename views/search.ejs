@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        html {
+            background: url("images/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        #button {
+            background-color: #5978ff;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+        /* Style the search box */
+        
+        #mySearch {
+            border: lightslategray;
+            width: 100%;
+            text-align: center;
+            align-content: center;
+            font-size: 18px;
+            padding: 11px;
+        }
+        /* Style the navigation menu */
+        
+        #myMenu {
+            text-align: center;
+            align-content: center;
+            width: 100%;
+            height: 50%;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* Style the navigation links */
+        
+        #myMenu li a {
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            display: block
+        }
+        
+        .container {
+            top: 40%;
+            left: 40%;
+            width: 100%;
+            height: 50%;
+        }
+        
+        #myMenu li a:hover {
+            box-shadow: transparent;
+            background-color: none;
+        }
+        
+        .a {
+            color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <div class="container">
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+                <body>
+                    <ul id="myMenu">
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li><a href="/agra">Agra</a></li>
+                        <li>
+                            <a href="/an">
+                                <%= andaman%>
+                            </a>
+                        </li>
+                        <li><a href="/delhi">Delhi</a></li>
+                        <li><a href="/goa">Goa</a></li>
+                        <li><a href="/jaipur">Jaipur</a></li>
+                        <li><a href="/kerala">Kerala</a></li>
+                        <li><a href="/khandala">Khandala</a></li>
+                        <li><a href="/ladakh">Ladakh</a></li>
+                        <li><a href="/manali">Manali</a></li>
+                        <li><a href="/nainital">Nainital</a></li>
+                        <li><a href="/udaipur">Udaipur</a></li>
+                    </ul>
+
+
+            </div>
+            <a href="/home" class="btn btn-info" id="button">
+                    HOME</a>
+
+
+
+
+        </div>
+    </div>
+
+    <p></p>
+    <p></p>
+
+    </body>
+
+</html>
+
+
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>

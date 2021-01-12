@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+        
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        .button {
+            color: rgb(91, 206, 214);
+            border-radius: 8px;
+            width: 20%;
+        }
+        
+        .button:hover {
+            background-color: rgb(18, 168, 179);
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        .about {
+            text-decoration: pink;
+            text-transform: capitalize;
+            align-content: center;
+            text-align: center;
+            font-family: fantasy;
+            border: navy;
+            box-sizing: content-box;
+            border-color: paleturquoise;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <h1>About-Us Page</h1>
+        <h1>TourGuide</h1>
+        <p>
+
+            “Travel is the main thing you purchase that makes you more extravagant”. We, at 'TourGuide', swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly. We have been moving excellent encounters for a considerable
+            length of time through our cutting edge planned occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters. Through our exceptionally curated
+            occasion bundles, we need to take you on an adventure where you personally enjoy with the stunning magnificence of India and far off terrains. We need you to observe sensational scenes that are a long ways past your creative ability. The powerful
+            inclination of Indian voyagers to travel more nowadays is something that keeps us inspired to satisfy your vacation necessities. Our vision to give you a consistent occasion encounter makes us one of the main visit administrators in the regularly
+            extending travel industry. To guarantee that you have a satisfied occasion and healthy encounters, all our vacation administrations are available to your no matter what. On your universal occasion, we guarantee that you are very much outfitted
+            with outside trade (Forex Cards, Currency Notes), visa and travel protection. We are the pioneers of outside trade in India and booking forex online is basic and advantageous with us. Our online visa administrations are exceptional and make
+            the bulky procedure of booking visa a cake stroll for clients. We likewise give exceptional visa, forex and travel protection and outside settlement administrations for understudies voyaging abroad for study. Regardless of whether it’s reserving
+            flights or inns for your movement, COmpany Name offers everything under one umbrella. We likewise have journey occasions for individuals who are searching for solace and reasonable extravagance. We offer best limits on our top rated visit
+            bundles to clients who pick our viable administrations over and over. How about we remind you indeed that we don’t expect to be your visit and travel specialists; we endeavor to be your vacation accomplices until the end of time.
+
+
+
+        </p>
+
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+
+                <div class="container">
+                    <h2>
+                        <%= jagruti%>
+                    </h2>
+                    <p class="title">Id- 18005016</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+
+                <div class="container">
+                    <h2>
+                        <%= apurva%>
+                    </h2>
+                    <p class="title">Id- 18005007</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+
+                <div class="container">
+                    <h2>
+                        <%= rucha%>
+                    </h2>
+                    <p class="title">Id- 18005003</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+
+        <a href="/home" class="btn btn-info" role="button">HOME</a>
+
+    </div>
+</body>
+
+</html>
